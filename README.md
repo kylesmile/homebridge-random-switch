@@ -14,13 +14,14 @@ Add the device as an accessory in homebridge's `config.json`.
 
 Example `config.json`:
 ```json
-"accessories": {
+"accessories": [
+  {
     "accessory": "RandomSwitch",
     "name": "My Random Switch",
     "minimumDuration": 5,
     "maximumDuration": 10
   }
-}
+]
 ```
 
 The switch will turn itself off between `minimumDuration` and `maximumDuration` seconds after being turned on. `minimumDuration` is optional and defaults to `0`. `maximumDuration` is required.
